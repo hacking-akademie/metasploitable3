@@ -4,7 +4,11 @@ Das Packer AMI Deployment ist kopiert von hier https://github.com/rapid7/metaspl
 Anweisungen:
 * install packer
 * cd packer/templates
-* PACKER_LOG=1 packer build -debug ubuntu_1404_ctf_2017_hacklab.json
+* echo "" | PACKER_LOG=1 packer build -debug ubuntu_1404_ctf_2017_hacklab.json
+
+Falls die AMI schon existiert muss sie vorher gelöscht werden:
+* in build Account einloggen
+* Nach Ec2 --> AMI gehen und AMI löschen
 
 # Metasploitable3
 

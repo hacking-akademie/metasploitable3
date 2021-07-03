@@ -2,8 +2,10 @@
   "builders": [
     {
       "type": "amazon-ebs",
-      "region": "us-east-1",
-      "source_ami": "ami-86562dee",
+      "profile": "build",
+      "region": "eu-central-1",
+      "ami_users": ["429736546496", "890129220607", "681044435084"],
+      "source_ami": "ami-0898a436c22f3fe19",
       "instance_type": "t2.small",
       "ssh_username": "ubuntu",
       "ami_name": "metasploitable3-ub1404-{{user `box_version`}}"
