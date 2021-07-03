@@ -1,3 +1,11 @@
+# Hacklab specifisches:
+Das Packer AMI Deployment ist kopiert von hier https://github.com/rapid7/metasploitable3. Die Packer JSON befindet sich ./packer/templates/aws.
+
+Anweisungen:
+* install packer
+* cd packer/templates
+* PACKER_LOG=1 packer build -debug ubuntu_1404_ctf_2017_hacklab.json
+
 # Metasploitable3
 
 Metasploitable3 is a VM that is built from the ground up with a large amount of security vulnerabilities. It is intended to be used as a target for testing exploits with [metasploit](https://github.com/rapid7/metasploit-framework).
